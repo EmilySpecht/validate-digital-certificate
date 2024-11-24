@@ -23,8 +23,10 @@ export const useLoadCertificates = () => {
     validateCertificate,
     cleanCertificateDir,
   } = useValidateCertificate();
+
   useEffect(() => {
     cleanCertificateDir();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const uploadCertificateEnduser = async (

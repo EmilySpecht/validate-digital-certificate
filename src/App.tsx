@@ -134,7 +134,7 @@ const CDList = ({
                   {isTrusted ? "válido" : "inválido"}
                 </div>
               )}
-              <img src={certificateImage} className="image" />
+              <img src={certificateImage} className="image" alt="certificado" />
               <div>
                 <p className="issuedBy">Emitido por {issuer}</p>
                 {issued && <p className="issuedTo">Emitido para {issued}</p>}
